@@ -1,2 +1,2 @@
 FROM ghcr.io/dask/dask:latest
-RUN pip install gcsfs mlflow prefect>=2.0b dask-ml prometheus-client --upgrade
+RUN pip install 'pyarrow<9.0.0' s3fs mlflow prometheus-client --upgrade
